@@ -1,0 +1,186 @@
+/* 基础样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f5f7;
+    color: #333;
+}
+
+/* 容器样式 */
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 编辑个人信息页面 */
+.profile {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* 增加这行以隐藏溢出内容 */
+}
+
+
+.profile h1 {
+    font-size: 24px;
+    color: #005f99;
+    margin-bottom: 20px;
+}
+
+/* 联系方式和个人详情部分 */
+h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #005f99;
+    padding-bottom: 5px;
+}
+
+.contact-item {
+    margin-bottom: 15px;
+}
+
+.contact-item label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-item input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.personal-details li {
+    margin-bottom: 10px;
+}
+
+.personal-details li span {
+    font-weight: bold;
+    width: 150px;
+    display: inline-block;
+    color: #005f99;
+}
+
+.personal-details input {
+    width: calc(100% - 160px);
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* 添加、删除、修改新项的表单 */
+.form-box {
+    margin-top: 20px;
+
+}
+
+.form-box label {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-box input {
+    width: calc(50% - 10px);
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+}
+
+.form-box button {
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #005f99;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-box button:hover {
+    background-color: #007bbd;
+}
+
+/* 保存修改按钮 */
+/* 保存修改按钮 */
+#saveChangesButton {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto; /* 改为自动宽度 */
+    margin-top: 20px;
+    display: block; /* 确保按钮独占一行 */
+}
+
+#saveChangesButton:hover {
+    background-color: #218838;
+}
+
+
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .contact-item input,
+    .personal-details input,
+    .form-box input {
+        width: 100%;
+    }
+
+    .form-box button {
+        width: 100%;
+    }
+
+    #saveChangesButton {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .profile h1 {
+        font-size: 20px;
+    }
+
+    .contact-item input,
+    .personal-details input,
+    .form-box input {
+        font-size: 12px;
+    }
+
+    .form-box button {
+        font-size: 12px;
+    }
+
+    #saveChangesButton {
+        font-size: 14px;
+    }
+}
